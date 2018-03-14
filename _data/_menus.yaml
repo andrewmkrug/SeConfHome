@@ -1,0 +1,16 @@
+header:
+  - url: /
+    title: Blog
+    identifier: api
+  - url: /
+    title: Past Conferences
+    identifier: confs
+    children:
+      - url: http://seleniumconf.de
+        title: Berlin 2018
+      - url: http://2017.seleniumconf.us
+        title: Austin 2017
+  - url: /code_of_conduct
+    title: Code of Conduct
+
+archives:

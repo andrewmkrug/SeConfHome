@@ -1,0 +1,16 @@
+<div class="navbar-start">
+    {% for menuitem in site.data.menus.header  %}
+    {% if menuitem.identifier %}
+            <div class="has-dropdown navbar-item is-hoverable">
+                <a class="navbar-link">{{ menuitem.title }}</a>
+                <div class="navbar-dropdown">
+                    {% for child in menuitem.children %}
+                    <a href="{{ child.url }}" class="navbar-item">{{ child.title }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        {% else %}
+            <a href="{{ menuitem.url }}" class="navbar-item">{{ menuitem.title }}</a>
+        {% endif %}
+    {% endfor %}
+</div>

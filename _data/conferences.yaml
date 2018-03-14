@@ -1,0 +1,15 @@
+---
+- conference: bangalore
+  name: Bengaluru, India
+  date: June 28-30, 2018
+  buttons:
+  - link: https://2018.seleniumconf.in/
+    text: Visit the Site
+  - link: https://2018.seleniumconf.in/speakers.html
+    text: Submit a talk
+- conference: chicago
+  name: Chicago, USA
+  date: Site Opens March 12, 2018
+  buttons:
+  - link: https://www.seleniumconf.us/
+    text: Visit the Site

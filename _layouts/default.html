@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script>
+    $('.nav-toggle').bind('click', function(){
+        var menus = $(this).siblings(".nav-menu");
+        if(menus.hasClass('is-active')){
+            menus.removeClass('is-active');
+        } else {
+            menus.addClass('is-active');
+        }
+    });
+    </script>
+
+    <script async src="{{ '/scripts/main.min.js' | relative_url }}"></script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register("{{ "/sw.js" | relative_url }}").then(function() {
+      console.log("Service Worker Registered");
+    });
+  }
+  </script>
+  </body>
+
+</html>

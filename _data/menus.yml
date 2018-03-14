@@ -1,0 +1,25 @@
+---
+header:
+- identifier:
+  url: "/"
+  weight: 1
+  title: Blog
+- identifier: confs
+  url: "/"
+  weight: 2
+  title: Past Conferences
+  children:
+  - identifier:
+    url: http://2017.seleniumconf.us
+    weight: 2
+    parent: confs
+    title: Austin 2017
+  - identifier:
+    url: http://seleniumconf.de
+    weight: 1
+    parent: confs
+    title: Berlin 2017
+- identifier:
+  url: "/code_of_conduct"
+  weight: 3
+  title: Code of Conduct

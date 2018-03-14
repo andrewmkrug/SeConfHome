@@ -1,0 +1,144 @@
+<div class="container">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <figure class="image is-square">
+      <img id="seconficon" class="is-square" src="{{ site.url }}/images/android-192x192.png" />
+      </figure>
+      <a href="{{ "/" | prepend: site
+      l }}" class="navbar-item">
+      {{ site.name }}
+      </a>
+      {% if site.social.github %}
+      <a href="https://github.com/{{ site.social.github }}" class="navbar-item is-hidden-desktop">
+        <span class="icon">
+            <i class="fa fa-github"></i>
+        </span>
+      </a>
+      {% endif %}
+      {% if site.social.email %}
+      <a href="mailto:{{ site.social.email }}" class="navbar-item is-hidden-desktop">
+        <span class="icon">
+            <i class="fa fa-envelope-o"></i>
+        </span>
+      </a>
+      {% endif %}
+      {% if site.social.facebook %}
+      <a href="https://facebook.com/{{ site.social.facebook }}" class="navbar-item is-hidden-desktop">
+        <span class="icon">
+            <i class="fa fa-facebook"></i>
+        </span>
+      </a>
+      {% endif %}
+      {% if site.social.twitter %}
+      <a href="https://twitter.com/{{ site.social.twitter }}" class="navbar-item is-hidden-desktop">
+        <span class="icon">
+            <i class="fa fa-twitter"></i>
+        </span>
+      </a>
+      {% endif %}
+      {% if site.social.instagram %}
+      <a href="https://instagram.com/{{ site.social.instagram }}" class="navbar-item is-hidden-desktop">
+        <span class="icon">
+            <i class="fa fa-instagram"></i>
+        </span>
+      </a>
+      {% endif %}
+      {% if site.social.tumblr %}
+      <a href="https://{{ site.social.tumblr }}.tumblr.com" class="navbar-item is-hidden-desktop">
+        <span class="icon">
+            <i class="fa fa-tumblr"></i>
+        </span>
+      </a>
+      {% endif %}
+      <div class="navbar-burger burger" data-target="navMenubd-main">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div id="navMenubd-main" class="navbar-menu">
+      <div class="navbar-start">
+      </div>
+      <div class="navbar-end">
+        {% include menu.html %}
+
+        {% if site.social.github %}
+        <a href="https://github.com/{{ site.social.github }}" class="navbar-item is-hidden-desktop-only">
+          <span class="icon">
+              <i class="fa fa-github"></i>
+          </span>
+        </a>
+        {% endif %}
+        {% if site.social.email %}
+        <a href="mailto:{{ site.social.email }}" class="navbar-item is-hidden-desktop-only">
+          <span class="icon">
+              <i class="fa fa-envelope-o"></i>
+          </span>
+        </a>
+        {% endif %}
+        {% if site.social.facebook %}
+        <a href="https://facebook.com/{{ site.social.facebook }}" class="navbar-item is-hidden-desktop-only">
+          <span class="icon">
+              <i class="fa fa-facebook"></i>
+          </span>
+        </a>
+        {% endif %}
+        {% if site.social.twitter %}
+        <a href="https://twitter.com/{{ site.social.twitter }}" class="navbar-item is-hidden-desktop-only">
+          <span class="icon">
+              <i class="fa fa-twitter"></i>
+          </span>
+        </a>
+        {% endif %}
+        {% if site.social.instagram %}
+        <a href="https://instagram.com/{{ site.social.instagram }}" class="navbar-item is-hidden-desktop-only">
+          <span class="icon">
+              <i class="fa fa-instagram"></i>
+          </span>
+        </a>
+        {% endif %}
+        {% if site.social.tumblr %}
+        <a href="https://{{ site.social.tumblr }}.tumblr.com" class="navbar-item is-hidden-desktop-only">
+          <span class="icon">
+              <i class="fa fa-tumblr"></i>
+          </span>
+        </a>
+        {% endif %}
+        <div class="navbar-item">
+          <div class="field is-grouped">
+            <p class="control">
+              <!--<a class="bd-tw-button button"-->
+              <!--data-social-network="Twitter"-->
+              <!--data-social-action="tweet"-->
+              <!--data-social-target="https://twitter.com/{{ site.social.twitter }}"-->
+              <!--target="_blank"-->
+              <!--href="https://twitter.com/intent/tweet?text=Jekyll Bulma—Jekyll theme based on modern CSS framework based on Flexbox&hashtags=bulmaio&url={{site.url}}{{site.baseurl}}&via={{ site.social.twitter }}">-->
+              <!--<span class="icon">-->
+              <!--<i class="fa fa-twitter"></i>-->
+              <!--</span>-->
+              <!--<span>-->
+              <!--Tweet-->
+              <!--</span>-->
+              <!--</a>-->
+            </p>
+            <!--<p class="control">-->
+            <!--<a class="button is-primary" href="{{ site.download }}">-->
+            <!--<span class="icon">-->
+            <!--<i class="fa fa-download"></i>-->
+            <!--</span>-->
+            <!--<span>Download</span>-->
+            <!--</a>-->
+            <!--</p>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+</div>
+{% for announcement in site.data.announcements %}
+
+{% if announcement.announcement %}
+<div class=" has-text-centered" style="background-color: #{{ announcement.color }};"><p style="padding:5px;">{{ announcement.announcement }}</p></div>
+{% endif %}
+{% endfor %}

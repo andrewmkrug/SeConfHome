@@ -1,0 +1,66 @@
+---
+layout: default
+---
+<section class="hero is-primary" >
+  <div class=" is-gapless">
+    <div class="container is-fluid columns  is-gapless">
+
+      {% for conf in site.conferences %}
+      <div type="conference" id="{{ conf.name }}" class="conference hero-body column level" style="background-image: url('{{ conf.image }}');">
+        <div class="info is-centered has-text-centered columns is-mobile">
+          <div class="box column is-half">
+            <h1 class="title" style="color: #{{ conf.color }} ">{{ conf.location }}</h1>
+            <h2 class="subtitle">{{ conf.content }}</h2>
+            {% for button in conf.buttons %}
+            <a href="{{ button.link }}" style="background-color: #{{ conf.color }}"><button class="button is-{{ conf.conference }}">{{ button.text}}</button></a>
+            {% endfor %}
+
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-fluid">
+    {% for post in paginator.posts %}
+    <div class="card post-card">
+      {% if post.thumbnail %}
+      <div class="card-image">
+        <figure class="image">
+          <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
+            <img src="{{ post.thumbnail | prepend: site.baseurl }}" alt="{{ post.title }}">
+          </a>
+        </figure>
+      </div>
+      {% endif %}
+      <div class="card-content">
+        <h3 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+        <p class="post-categories">
+          {% for category in post.categories %}
+          <a href="/{{ category | prepend: site.baseurl }}" class="tag {% if site.data.category[category].color %} is-{{ site.data.category[category].color }} {% endif %}">{{ category }}</a>
+          {% endfor %}
+        </p>
+        {{ post.excerpt }}
+      </div>
+    </div>
+    <br>
+    {% endfor %}
+    <nav class="pagination is-centered">
+      {% if paginator.previous_page %}
+      <a href="..{{  paginator.previous_page_path }}" class="pagination-previous">Previous Page</a>
+      {% endif %}
+      {% if paginator.next_page %}
+      <a href="..{{  paginator.next_page_path }}" class="pagination-next">Next Page</a>
+      {% endif %}
+      <ul class="pagination-list">
+        {% for page in (1..paginator.total_pages) %}
+        <li>
+          <a {% if page == paginator.page %}{% else %} href="{% if page == 1 %}../{% else %}{% if paginator.page != 1 %}../{% endif %}{{ page }}{% endif %}" {% endif %} class="pagination-link {% if page == paginator.page %} is-current {% endif %}">{{ page }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</section>
