@@ -17,11 +17,11 @@ name: Selenium Conference
 description: "Home of all of the selenium conferences."
 baseurl:
 url: http://seleniumconf.com
-title: SeConfHome
-email: your-email@domain.com
+title: Selenium Conference Home
+email: andrew@lazycoder.io
 
 #url: "https://nirgn975.github.io/andrewmkrug" # the base hostname & protocol for your site
-twitter_username: andrewmkrug
+twitter_username: lazycoderio
 github_username:  andrewmkrug
 
 # Build settings

@@ -10,11 +10,6 @@ header:
   title: Past Conferences
   children:
   - identifier:
-    url: http://2017.seleniumconf.us
-    weight: 2
-    parent: confs
-    title: Austin 2017
-  - identifier:
     url: http://seleniumconf.de
     weight: 1
     parent: confs

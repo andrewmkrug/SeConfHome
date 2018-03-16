@@ -10,18 +10,18 @@
 
 $chicago: #4C8DBF !default
 $bangalore: #40AF49 !default
-$selenium: #2F792B !default
+$selenium: #28A82E !default
 
 $selenium-invert: #fff;
 $bangalore-invert: findColorInvert($bangalore);
 $chicago-invert: findColorInvert($chicago);
-
+$primary: #28A82E;
 // Add a serif family
 $family-serif: "Merriweather", "Georgia", serif;
 
 // 3. Set the derived variables
 // Use the new pink as the primary color
-$primary: $selenium;
+$primary: #28A82E;
 $primary-invert: $selenium-invert;
 // Use the existing orange as the danger color
 //$danger: $orange;
@@ -44,13 +44,16 @@ $addColors: (
         "github": ($github, $github-invert),
         "bangalore": ($bangalore $bangalore-invert),
         "chicago": ($chicago, $chicago-invert),
-        "selenium": ($selenium, $selenium-invert)
+        "selenium": ($selenium, $selenium-invert),
+        "primary":($selenium, $selenium-invert),
+        "grey": ($grey-lighter, $white)
 );
 $colors: map-merge($colors, $addColors);
 
 // 6. Import the rest of Bulma
 @import "../sass/bulma";
-
+$primary: $selenium;
+$primary-invert: $selenium-invert;
 // Custom
 .navbar-brand {
   font-weight: bold;
@@ -66,7 +69,7 @@ $colors: map-merge($colors, $addColors);
     margin-bottom: 5px;
   }
 }
-body {font-family: 'Encode Sans', sans-serif; }
+* {font-family: 'Titillium Web', sans-serif; }
 #bangalore {
   background: url("/images/bangalore.png") no-repeat center center;
   -webkit-background-size: cover;
