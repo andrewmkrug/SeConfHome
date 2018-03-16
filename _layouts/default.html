@@ -30,12 +30,19 @@
     </script>
 
     <script async src="{{ '/scripts/main.min.js' | relative_url }}"></script>
-  <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register("{{ "/sw.js" | relative_url }}").then(function() {
-      console.log("Service Worker Registered");
-    });
-  }
+  <script type="text/javascript">
+      if ("serviceWorker" in navigator) {
+          navigator.serviceWorker.register("/sw.js").then(function(registration) {
+              console.log("Service Worker registration successful with scope: ", registration.scope);
+          }).catch(function(err) {
+              console.log("Service Worker registration failed: ", err);
+          });
+      }
+  var dropdown = document.querySelector('.has-dropdown');
+  dropdown.addEventListener('click', function(event) {
+      event.stopPropagation();
+      dropdown.classList.toggle('is-active');
+  });
   </script>
   </body>
 
