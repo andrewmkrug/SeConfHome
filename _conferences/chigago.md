@@ -1,7 +1,7 @@
 ---
 name: chicago
 location: Chicago, USA
-image: /images/jeff-brown-246391.jpg
+image: /images/Optimized-jeff-brown-246391
 color: 4C8DBF
 buttons:
     - link: https://www.seleniumconf.us/
