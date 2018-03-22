@@ -6,6 +6,9 @@ color: 4C8DBF
 buttons:
     - link: https://www.seleniumconf.us/
       text: Visit the Site
+    - link: https://www.papercall.io/seleniumconfchicago
+      text: Submit a Talk
 ---
 
-Tickets and CFP start March 19, 2018
+Early Bird Tickets are Sold Out!
+CFP closes on: May 11, 2018
