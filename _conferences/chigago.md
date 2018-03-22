@@ -10,5 +10,5 @@ buttons:
       text: Submit a Talk
 ---
 
-Early Bird Tickets are Sold Out!
+Early Bird Tickets are Sold Out!<br />
 CFP closes on: May 11, 2018
