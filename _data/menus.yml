@@ -1,9 +1,9 @@
 ---
 header:
 - identifier: 
-  url: "/code_of_conduct"
-  weight: 3
-  title: Code of Conduct
+  url: "/"
+  weight: 1
+  title: Blog
 - identifier: confs
   url: "/"
   weight: 2
@@ -15,6 +15,6 @@ header:
     title: Berlin 2017
   title: Past Conferences
 - identifier: 
-  url: "/"
-  weight: 1
-  title: Blog
+  url: "/code_of_conduct"
+  weight: 3
+  title: Code of Conduct
