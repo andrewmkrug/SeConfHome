@@ -30,15 +30,16 @@ fields:
   label: Buttons
   type: field_group_list
   fields:
-  - name: link
-    label: Link
-    type: text
-    hidden: false
-    default: ''
   - name: text
     label: Text
     type: text
     hidden: false
     default: ''
+  - name: link
+    label: Link
+    type: text
+    hidden: false
+    default: ''
   hidden: false
   default: ''
+  description: Buttons to show up on the box
