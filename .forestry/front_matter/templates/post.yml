@@ -4,13 +4,17 @@ fields:
 - name: layout
   label: Layout
   type: text
-  hidden: false
-  default: ''
+  hidden: true
+  default: post
+  config:
+    required: true
 - name: title
   label: Title
   type: text
   hidden: false
   default: ''
+  config:
+    required: true
 - name: categories
   label: Categories
   type: tag_list
@@ -20,7 +24,7 @@ fields:
   label: Date
   type: datetime
   hidden: false
-  default: ''
+  default: Invalid date
 - name: description
   label: Description
   type: text
