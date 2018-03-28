@@ -1,0 +1,44 @@
+---
+hide_body: false
+fields:
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: name
+  label: Name
+  type: text
+  hidden: false
+  default: ''
+- name: location
+  label: Location
+  type: text
+  hidden: false
+  default: ''
+- name: image
+  label: Image
+  type: file
+  hidden: false
+  default: ''
+- name: color
+  label: Color
+  type: text
+  hidden: false
+  default: ''
+- name: buttons
+  label: Buttons
+  type: field_group_list
+  fields:
+  - name: link
+    label: Link
+    type: text
+    hidden: false
+    default: ''
+  - name: text
+    label: Text
+    type: text
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
