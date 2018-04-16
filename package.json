@@ -37,7 +37,7 @@
     "url": "https://github.com/andrewmkrug/SeConfHome.git"
   },
   "dependencies": {
-    "bulma": "^0.6.2",
+    "bulma": "^0.7.0",
     "bulma-start": "0.0.2"
   }
 }
