@@ -48,7 +48,7 @@ $addColors: (
         "bangalore": ($bangalore $bangalore-invert),
         "chicago": ($chicago, $chicago-invert),
         "selenium": ($selenium, $selenium-invert),
-        "tokyo": ($tokyo, $tokyo-invert),
+        "tokyo": ($tokyo, $white),
         "primary":($selenium, $selenium-invert),
         "grey": ($grey-lighter, $white)
 );
@@ -118,7 +118,7 @@ div.conference.hero-body.column.is-half.level {
 }
 
 #tokyo{
-  background: url("/images/poster-tokyo-skyline-mit-fuji-und-skytree-und-shinjuku-1326691.jpg") no-repeat center center;
+  background: url("/images/TokyoTower(recommended).jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -126,9 +126,10 @@ div.conference.hero-body.column.is-half.level {
   .title{
     color: $tokyo;
   }
-  .subtitle{ color: $black;}
+  .subtitle{ color: $white;}
   button{
     background-color: $tokyo;
+    color: $white;
   }
 }
 .hero-body{ padding: 0;}
