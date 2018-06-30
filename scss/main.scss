@@ -10,11 +10,14 @@
 
 $chicago: #4C8DBF !default
 $bangalore: #40AF49 !default
+$tokyo: #BC002D !default
 $selenium: #28A82E !default
 
 $selenium-invert: #fff;
 $bangalore-invert: findColorInvert($bangalore);
 $chicago-invert: findColorInvert($chicago);
+$tokyo-invert: findColorInvert($tokyo);
+
 $primary: #28A82E;
 // Add a serif family
 $family-serif: "Merriweather", "Georgia", serif;
@@ -45,6 +48,7 @@ $addColors: (
         "bangalore": ($bangalore $bangalore-invert),
         "chicago": ($chicago, $chicago-invert),
         "selenium": ($selenium, $selenium-invert),
+        "tokyo": ($tokyo, $white),
         "primary":($selenium, $selenium-invert),
         "grey": ($grey-lighter, $white)
 );
@@ -110,6 +114,22 @@ div.conference.hero-body.column.is-half.level {
   .subtitle{ color: $black;}
   button{
     background-color: $chicago;
+  }
+}
+
+#tokyo{
+  background: url("/images/TokyoTower(recommended).jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .title{
+    color: $tokyo;
+  }
+  .subtitle{ color: $black;}
+  button{
+    background-color: $tokyo;
+    color: $white;
   }
 }
 .hero-body{ padding: 0;}
