@@ -1,7 +1,7 @@
 ---
 name: tokyo
 location: 'Tokyo, Japan'
-image: /images/poster-tokyo-skyline-mit-fuji-und-skytree-und-shinjuku-1326691.jpg
+image: /images/TokyoTower(recommended).jpg
 color: BC002D
 buttons:
   - link: 'https://www.seleniumconf.com/'
