@@ -16,7 +16,7 @@ $selenium: #28A82E !default
 $selenium-invert: #fff;
 $bangalore-invert: findColorInvert($bangalore);
 $chicago-invert: findColorInvert($chicago);
-$$tokyo-invert: findColorInvert($tokyo);
+$tokyo-invert: findColorInvert($tokyo);
 
 $primary: #28A82E;
 // Add a serif family
