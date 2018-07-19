@@ -4,7 +4,7 @@ location: 'Tokyo, Japan'
 image: /images/TokyoTower(recommended).jpg
 color: BC002D
 buttons:
-  - link: 'https://www.seleniumconf.com/'
-    text: Site Coming Soon
+  - link: 'https://conf.selenium.jp/'
+    text: Visit the Site
 ---
 April 18-19, 2019

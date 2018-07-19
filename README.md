@@ -1,6 +1,6 @@
 # SeConfHome
 
-[![license][license-image]][license-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][dependencyci-image]][dependencyci-url]
+[![license][license-image]][license-url] [![Build Status](https://travis-ci.org/andrewmkrug/SeConfHome.svg?branch=master)](https://travis-ci.org/andrewmkrug/SeConfHome) [![Dependency Status][dependencyci-image]][dependencyci-url]
 
 > 
 
