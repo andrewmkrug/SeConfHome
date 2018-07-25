@@ -1,7 +1,7 @@
 ---
 name: tokyo
 location: 'Tokyo, Japan'
-image: /images/TokyoTower(recommended).jpg
+image: /images/tokyo.png
 color: BC002D
 buttons:
   - link: 'https://conf.selenium.jp/'
