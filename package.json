@@ -30,7 +30,7 @@
     "lighthouse": "^2.7.0",
     "sw-precache": "^5.2.0",
     "sw-toolbox": "^3.6.0",
-    "run-sequence": "^2.2.0"
+    "run-sequence": "^2.2.1"
   },
   "repository": {
     "type": "git",
