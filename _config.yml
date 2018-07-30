@@ -16,7 +16,7 @@
 name: Selenium Conference
 description: "Home of all of the selenium conferences."
 baseurl:
-url: http://seleniumconf.com
+url: https://www.seleniumconf.com
 title: Selenium Conference Home
 email: andrew@lazycoder.io
 

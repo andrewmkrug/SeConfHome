@@ -8,5 +8,5 @@ buttons:
     text: Visit the Site
 
 ---
-Early Bird Tickets are Sold Out!<br />
+Standard tickets selling out fast, book yours today<br />
 
