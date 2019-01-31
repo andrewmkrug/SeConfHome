@@ -7,8 +7,12 @@ header:
   title: Past Conferences
   identifier: confs
   children:
+  - url: https://seleniumconf.us/
+    title: Chicago 2018
+  - url: https://2018.seleniumconf.in/
+    title: India 2018
   - url: http://seleniumconf.de
-    title: Berlin 2018
+    title: Berlin 2017
   - url: http://2017.seleniumconf.us
     title: Austin 2017
 - url: "/code_of_conduct"
