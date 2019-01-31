@@ -6,7 +6,7 @@ layout: default
     <div class="container is-fluid columns  is-gapless">
 
       {% for conf in site.conferences | sort 'order' desc %}
-      <div type="conference" id="{{ conf.name }}" class="conference hero-body column level" style="background-image: url('{{ conf.image }}');">
+      <div type="conference" id="{{ conf.name }}" class="conference hero-body column level conf.order" style="background-image: url('{{ conf.image }}');">
         <div class="info is-centered has-text-centered columns is-mobile">
           <div class="box column is-half">
             <h1 class="title" style="color: #{{ conf.color }} ">{{ conf.location }}</h1>
