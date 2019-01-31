@@ -136,6 +136,22 @@ div.conference.hero-body.column.is-half.level {
     color: $white;
   }
 }
+
+#london{
+  background: url("/images/Selenium Conf London purchased.png(recommended).jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .title{
+    color: $london;
+  }
+  .subtitle{ color: $black;}
+  button{
+    background-color: $london;
+    color: $white;
+  }
+}
 .hero-body{ padding: 0;}
 
 .info{padding: 10rem 0;
