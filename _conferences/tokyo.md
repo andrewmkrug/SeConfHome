@@ -3,7 +3,7 @@ name: tokyo
 location: 'Tokyo, Japan'
 image: /images/tokyo.png
 color: BC002D
-order: 1
+order: 3
 buttons:
   - link: 'https://conf.selenium.jp/'
     text: Visit the Site

@@ -1,5 +1,5 @@
 ---
-name: tokyo
+name: london
 location: 'London, United Kingdom'
 image: /images/tokyo.png
 image: /images/Selenium Conf London purchased.png
