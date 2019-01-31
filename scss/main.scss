@@ -11,12 +11,15 @@
 $chicago: #4C8DBF !default
 $bangalore: #40AF49 !default
 $tokyo: #BC002D !default
+
+$london: #1533A0 !default
 $selenium: #28A82E !default
 
 $selenium-invert: #fff;
 $bangalore-invert: findColorInvert($bangalore);
 $chicago-invert: findColorInvert($chicago);
 $tokyo-invert: findColorInvert($tokyo);
+$london-invert: findColorInvert($london);
 
 $primary: #28A82E;
 // Add a serif family
@@ -47,6 +50,7 @@ $addColors: (
         "github": ($github, $github-invert),
         "bangalore": ($bangalore $bangalore-invert),
         "chicago": ($chicago, $chicago-invert),
+        "london": ($london, $london-invert)
         "selenium": ($selenium, $selenium-invert),
         "tokyo": ($tokyo, $white),
         "primary":($selenium, $selenium-invert),
