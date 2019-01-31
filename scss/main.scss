@@ -131,11 +131,15 @@ div.conference.hero-body.column.is-half.level {
     color: $tokyo;
   }
   .subtitle{ color: $black;}
-  button{
-    background-color: $tokyo;
-    color: $white;
+  a{
     border-radius: 5px;
-    border-color: none;
+    // border: none;
+  
+    button{
+      background-color: $tokyo;
+      color: $white;
+      
+    }
   }
 }
 
@@ -149,11 +153,15 @@ div.conference.hero-body.column.is-half.level {
     color: $london;
   }
   .subtitle{ color: $black;}
-  button{
-    background-color: $london;
-    color: $white;
+  a{
     border-radius: 5px;
-    border-color: none;
+    // border: none;
+  
+    button{
+      background-color: $london;
+      color: $white;
+      
+    }
   }
 }
 .hero-body{ padding: 0;}
