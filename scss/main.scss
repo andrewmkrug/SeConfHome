@@ -134,6 +134,8 @@ div.conference.hero-body.column.is-half.level {
   button{
     background-color: $tokyo;
     color: $white;
+    border-radius: 5px;
+    border-color: none;
   }
 }
 
@@ -150,6 +152,8 @@ div.conference.hero-body.column.is-half.level {
   button{
     background-color: $london;
     color: $white;
+    border-radius: 5px;
+    border-color: none;
   }
 }
 .hero-body{ padding: 0;}
