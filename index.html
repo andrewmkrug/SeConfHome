@@ -1,18 +1,20 @@
 ---
 layout: default
 ---
-<section class="hero is-primary" >
+<section class="hero is-primary">
   <div class=" is-gapless">
     <div class="container is-fluid columns  is-gapless">
 
-      {% for conf in site.conferences %}
-      <div type="conference" id="{{ conf.name }}" class="conference hero-body column level" style="background-image: url('{{ conf.image }}');">
+      {% assign sorted_confs = site.conferences | sort 'date' %}
+      {% for conf in sorted_confs %}
+      <div type="conference" id="{{ conf.name }}" class="conference hero-body column level conf.order" style="background-image: url('{{ conf.image }}');">
         <div class="info is-centered has-text-centered columns is-mobile">
           <div class="box column is-half">
             <h1 class="title" style="color: #{{ conf.color }} ">{{ conf.location }}</h1>
             <h2 class="subtitle">{{ conf.content }}</h2>
             {% for button in conf.buttons %}
-            <a href="{{ button.link }}" style="background-color: #{{ conf.color }}"><button class="button is-{{ conf.conference }}">{{ button.text}}</button></a>
+            <a href="{{ button.link }}" style="background-color: #{{ conf.color }}"><button class="button is-{{ conf.conference }}">{{
+                button.text}}</button></a>
             {% endfor %}
 
           </div>
@@ -39,7 +41,8 @@ layout: default
         <h3 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
         <p class="post-categories">
           {% for category in post.categories %}
-          <a href="/{{ category | prepend: site.baseurl }}" class="tag {% if site.data.category[category].color %} is-{{ site.data.category[category].color }} {% endif %}">{{ category }}</a>
+          <a href="/{{ category | prepend: site.baseurl }}" class="tag {% if site.data.category[category].color %} is-{{ site.data.category[category].color }} {% endif %}">{{
+            category }}</a>
           {% endfor %}
         </p>
         {{ post.excerpt }}
@@ -57,7 +60,8 @@ layout: default
       <ul class="pagination-list">
         {% for page in (1..paginator.total_pages) %}
         <li>
-          <a {% if page == paginator.page %}{% else %} href="{% if page == 1 %}../{% else %}{% if paginator.page != 1 %}../{% endif %}{{ page }}{% endif %}" {% endif %} class="pagination-link {% if page == paginator.page %} is-current {% endif %}">{{ page }}</a>
+          <a {% if page==paginator.page %}{% else %} href="{% if page == 1 %}../{% else %}{% if paginator.page != 1 %}../{% endif %}{{ page }}{% endif %}"
+            {% endif %} class="pagination-link {% if page == paginator.page %} is-current {% endif %}">{{ page }}</a>
         </li>
         {% endfor %}
       </ul>
