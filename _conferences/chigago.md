@@ -6,7 +6,5 @@ color: 4C8DBF
 buttons:
   - link: 'https://www.seleniumconf.us/'
     text: Visit the Site
-
 ---
-Standard tickets selling out fast, book yours today<br />
-
+Submit your proposal today!
