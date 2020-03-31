@@ -1,0 +1,3 @@
+[submodule "SeConfs"]
+	path = SeConfs
+	url = https://github.com/andrewmkrug/SeConfs.git

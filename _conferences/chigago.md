@@ -1,12 +1,10 @@
 ---
 name: chicago
 location: 'Chicago, USA'
-image: /images/Optimized-jeff-brown-246391.jpg
-color: 4C8DBF
+image: /images/chicago-image.jpg
+color: 1fcecb 
 buttons:
-  - link: 'https://www.seleniumconf.us/'
-    text: Visit the Site
-
+  - link: 'https://forms.gle/iHc7qzZz8GaME8dt8'
+    text: Submit a Speaking Proposal
 ---
-Standard tickets selling out fast, book yours today<br />
-
+November 18-19, 2020
