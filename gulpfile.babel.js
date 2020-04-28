@@ -152,8 +152,7 @@ gulp.task('build', () =>
     'minify-html',
     'css',
     'generate-service-worker',
-    'minify-images',
-    'revert-config'
+    'minify-images'
   )
 );
 
