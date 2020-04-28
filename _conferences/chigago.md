@@ -8,3 +8,4 @@ buttons:
     text: Submit a Speaking Proposal
 ---
 November 18-19, 2020
+CFP Extended to May 15
