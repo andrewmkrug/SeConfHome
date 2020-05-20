@@ -27,7 +27,7 @@
     "gulp-sass": "^4.0.1",
     "gulp-shell": "^0.6.5",
     "gulp-uglify": "^3.0.1",
-    "lighthouse": "^2.7.0",
+    "lighthouse": "^6.0.0",
     "sw-precache": "^5.2.0",
     "sw-toolbox": "^3.6.0",
     "run-sequence": "^2.2.1"
